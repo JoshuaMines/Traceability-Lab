@@ -13,15 +13,15 @@ rollbar.log("Hello worldzz!");
 app.use(express.json())
 
 //fake function
-fakeFunction();
+
+
+
+app.get('/', function(req, res) {fakeFunction();
 } catch (err) {
     console.log(err)
     rollbar.error(err);
     return res.sendStatus(400);
-};
-
-
-app.get('/', function(req, res) {
+}
     res.sendFile(path.join(__dirname, '/public/index.html'))
 })
 

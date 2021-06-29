@@ -25,7 +25,9 @@ getQuerySubmit.addEventListener('click', () => {
 });
 
 // //python error
-cars = ['puegot', 'honda']
+let num1 = 5
+let num2 = 6
+num1 + num2 = 12;
 
 
 

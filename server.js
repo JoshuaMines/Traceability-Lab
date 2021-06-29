@@ -26,11 +26,11 @@ app.get('/', function(req, res) {fakeFunction();
 })
 
 // // test rollbar code
-getQuerySubmit.addEventListener('click', () => {
-    axios
-        .get(`http://localhost:5050/api/inventory?item=${queryInput.value}`)
-        .then(res => addToView(res.data))
-});
+// getQuerySubmit.addEventListener('click', () => {
+//     axios
+//         .get(`http://localhost:5050/api/inventory?item=${queryInput.value}`)
+//         .then(res => addToView(res.data))
+// });
 
 
 

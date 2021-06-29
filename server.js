@@ -12,27 +12,10 @@ rollbar.log("Hello worldzz!");
 
 app.use(express.json())
 
-//fake function
-
-
 
 app.get('/', function(req, res) {fakeFunction();
-} catch (err) {
-    console.log(err)
-    rollbar.error(err);
-    return res.sendStatus(400);
-}
     res.sendFile(path.join(__dirname, '/public/index.html'))
 })
-
-// // test rollbar code
-// getQuerySubmit.addEventListener('click', () => {
-//     axios
-//         .get(`http://localhost:5050/api/inventory?item=${queryInput.value}`)
-//         .then(res => addToView(res.data))
-// });
-
-
 
 
 const port = process.env.PORT || 4000

@@ -12,6 +12,14 @@ rollbar.log("Hello worldzz!");
 
 app.use(express.json())
 
+//fake function
+fakeFunction();
+} catch (err) {
+    console.log(err)
+    rollbar.error(err);
+    return res.sendStatus(400);
+};
+
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/public/index.html'))
@@ -24,10 +32,6 @@ getQuerySubmit.addEventListener('click', () => {
         .then(res => addToView(res.data))
 });
 
-// //python error
-let num1 = 5
-let num2 = 6
-num1 + num2 = 12;
 
 
 

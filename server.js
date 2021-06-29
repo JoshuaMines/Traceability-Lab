@@ -17,12 +17,17 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/public/index.html'))
 })
 
-//test rollbar code
+// // test rollbar code
 getQuerySubmit.addEventListener('click', () => {
     axios
         .get(`http://localhost:5050/api/inventory?item=${queryInput.value}`)
         .then(res => addToView(res.data))
 });
+
+// //python error
+cars = ['puegot', 'honda']
+
+
 
 const port = process.env.PORT || 4000
 
